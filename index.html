@@ -11,7 +11,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <title>WernersFarhrschule</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css" integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
     <style>
+        .black{
+            color: black;
+        }
         .color-text{
             color: #FFED00;
             border-color: #FFED00;
@@ -32,20 +39,33 @@
         }
 
         .card-color{
-            background-color: #FBFAEB;
+            background-color: #FEFEFC;
         }
         .card-color-yellow{
             background-color: #FFED00;
         }
+
+        @media (min-width: 1024px) {
+  .top-navbar {
+    display: inline-flex !important;
+  }
+}
+
+
+
+
+</style>
     </style>
+    
 </head>
 <body class="tracking-wider"style="font-family: 'Fjalla One', sans-serif; letter-spacing: 1.6px;">
     <section id="firstSection" class="color-text">
-        <div class="bg-cover bg-center min-h-screen " style="background-image: url(media/blueBackground.jpg)">
-            <nav class="relative w-full flex flex-wrap items-center justify-between py-3 bg-transparent text-gray-200  navbar navbar-expand-lg navbar-light pt-6 p-10">
-                <div class="container-fluid w-full flex flex-wrap items-center justify-between px-6">
+        <div class="bg-cover bg-center min-h-screen " style="background-image: url(media/blue-background.jpg)">
+            <!-- NAVBAR -->
+            <nav class="relative w-full flex flex-wrap items-center justify-between py-3 bg-transparent text-gray-200  navbar navbar-expand-lg navbar-light pt-6  md:p-10 ">
+                <div class="container-fluid w-full flex  items-center justify-between px-6">
                     <div class="container-fluid">
-                        <a class="flex items-center text-gray-900 hover:text-gray-900 focus:text-gray-900 lg:mt-0 mr-1 w-1/4" href="#">
+                        <a class="flex items-center text-gray-900 hover:text-gray-900 focus:text-gray-900 lg:mt-0 mr-1 w-1/3 md:w-1/2" href="#">
                           <img src="media/logo.png"  alt="" loading="lazy" />
                         </a>
                       </div>
@@ -54,24 +74,61 @@
                 
                     <!-- Right elements -->
                     <div class="flex items-center relative">
+                        <button
+                        class="text-white inline-flex p-3  rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler"
+                        data-target="#navigation"
+                      >
+                        <i class="material-icons color-text ">menu</i>
+                      </button>
                         <div class="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent1">
                             <!-- Left links -->
-                            <ul class="navbar-nav flex flex-row pl-0 list-style-none mr-auto">
+                            <ul class="navbar-nav flex flex-row pl-0 list-style-none mr-auto lg:flex hidden">
                             <li class="nav-item p-2">
-                                <a class="color-text nav-link" href="#">Dashboard</a>
+                                <a class="color-text nav-link" href="#">Startseite</a>
                             </li>
                             <li class="nav-item p-2">
                                 <a
                                 class="color-text nav-link p-0"
                                 href="#"
-                                >Team</a
+                                >News</a
                                 >
                             </li>
                             <li class="nav-item p-2">
                                 <a
                                 class=" color-text nav-link p-0"
                                 href="#"
-                                >Projects</a
+                                >Klassen</a
+                                >
+                            </li>
+                            <li class="nav-item p-2">
+                                <a class="color-text nav-link" href="#">Unterricht</a>
+                            </li>
+                            <li class="nav-item p-2">
+                                <a
+                                class="color-text nav-link p-0"
+                                href="#"
+                                >Preise</a
+                                >
+                            </li>
+                            <li class="nav-item p-2 w-28">
+                                <a
+                                class="  color-text nav-link p-0"
+                                href="#"
+                                >E-Learning</a
+                                >
+                            </li>
+                            <li class="nav-item p-2">
+                                <a
+                                class="color-text nav-link p-0"
+                                href="#"
+                                >Kontakt</a
+                                >
+                            </li>
+                            <li class="nav-item p-2">
+                                <a
+                                class=" color-text nav-link p-0"
+                                href="#"
+                                >Fahrzeuge</a
                                 >
                             </li>
                             </ul>
@@ -82,10 +139,10 @@
                     <!-- Right elements -->
                 </div>
             </nav>
-            <div class="px-12 my-24 align-middle md:px-48 lg:px-56 lg:px-40 md:px-20  lg:mx-40 md:mx-20 mx-5
+            <div class=" my-24 align-middle md:px-48 lg:px-56 lg:px-40 md:px-20  lg:mx-40 md:mx-20 mx-5
             ">
-                <p class="align-middle text-center py-2	text-4xl">Willkommen bei der Fahrschule Werner</p>
-                <p class="align-middle text-center py-2	text-2m">Werners Fahrschule gewährleistet eine qualitätiv hochwertige Ausbildung in kürzester Zeit und zudem zu fairen Preisen!</p>
+                <p class="align-middle text-center py-2	md:text-5xl text-4xl leading-snug ">Willkommen bei der <br> Fahrschule Werner</p>
+                <p class="px-12 md:px-2 align-middle text-center py-2	text-2m">Werners Fahrschule gewährleistet eine qualitätiv hochwertige Ausbildung in kürzester Zeit und zudem zu fairen Preisen!</p>
                 <div class="p-8 flex justify-center">
                     <button class=" color-text bg-transparent  py-2 px-4 border  rounded">
                         ÜBER UNS
@@ -102,7 +159,7 @@
                 <img class="absolute inset-x-0 bottom-0 bg-cover " src="media/background-desktop.png" alt="">
             </div>
             <div class="hidden lg:block">
-                <img class="absolute inset-x-0 bottom-0 bg-cover " src="media/teste.png" alt="">
+                <img class="absolute inset-x-0 bottom-0 bg-cover " src="media/background-illustration3.png" alt="">
             </div>
           
               
@@ -120,11 +177,11 @@
                 </p>
             </div>
             <div class="col-span-1 md:flex justify-end md:-mt-16">
-                <img src="media/price-illustration.png" class="md:w-3/4 lg:w-1/4 md:absolute"alt="">
+                <img src="media/price-illustration.png" class="md:w-1/3 lg:w-1/4 md:absolute"alt="">
             </div>
         </div>
     </div>
-    <div class="flex overflow-x-scroll pb-10 hide-scroll-bar">
+    <div class="flex overflow-x-scroll pb-24 hide-scroll-bar">
         <div class="md:grid md:gap-9 md:grid-cols-3 flex flex-nowrap lg:ml-40 md:ml-20 lg:mr-40 md:mr-20 mx-3">
             <div class=" md:col-span-1  inline-block px-3 md:px-0">
                 <div class=" md:w-full w-64 h-65 max-w-xs overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out card-color">
@@ -210,7 +267,7 @@
   </section>
   <!-- NEWS SECTION -->
   <section class="min-h-screen  color-text-section2">
-    <div class="py-5 lg:px-20 md:px-10  lg:mx-20 md:mx-20 mx-5 grid grid-cols-1 md:grid-cols-2 p-10 md:flex">
+    <div class=" py-5 lg:px-20 md:px-10  lg:mx-20 md:mx-20 mx-5 grid grid-cols-1 md:grid-cols-2 p-10 md:flex md:flex-row-reverse">
         <div class="col-span-1 md:w-3/4 lg:w-1/2">
             <img src="media/news-illustration.png" alt="">
         </div>
@@ -258,8 +315,9 @@
   </section>
   <!-- Classes Section -->
   
-  <section class=" background-blue color-text">
-    <div class="grid grid-cols-1 md:grid-cols-2 p-10    py-5 lg:px-20 md:px-10  lg:mx-20 md:mx-20 mx-5 justify-items-center">
+  <section class=" color-text">
+    <div class="bg-cover bg-center min-h-screen " style="background-image: url(media/blue-background.jpg)">
+    <div class="grid grid-cols-1 md:grid-cols-2 p-10  pt-12  py-5 lg:px-20 md:px-10  lg:mx-20 md:mx-20 mx-5 justify-items-center">
         <div class="col-span-1 md:w-3/4 lg:w-2/3 w-64">
             <img src="media/classes-illustration.png" alt="">
         </div>
@@ -366,85 +424,242 @@
   
             
     </div>
+</div>
   </section>
-
     <!-- CONTACT/Unterrichtszeiten SECTION -->
     <section class="min-h-screen  color-text-section2">
-        <div class="py-5 lg:px-20 md:px-10  lg:mx-20 md:mx-20 mx-5 grid grid-cols-1 md:grid-cols-2 p-10 md:flex">
-           
+        <div class=" py-12  py-5 lg:px-20 md:px-10  lg:mx-20 md:mx-20 mx-5 grid grid-cols-1 md:grid-cols-2 p-10 md:flex md:flex-row-reverse justify-items-center">
+            <div class="col-span-1 md:w-3/4 lg:w-1/2 flex justify-center flex-col p-20">
+                <img src="media/lessons-illustration.png" alt="">
+            </div>
             <div class="col-span-1 md:flex md:justify-center md:flex-col md:p-10">
     
                 <h1 class="flex py-5 md:px-1   md:mx-2 text-xl ">LORUM IMPSUN</h1>
-                <h1 class="flex  md:px-1   md:mx-2  leading-tight text-6xl">Unterrichtszeiten</h1>
+                <h1 class="flex  md:px-1 md:mx-2 leading-tight md:text-6xl text-5xl">Unterrichtszeiten</h1>
+                <br>
                 <table class="table-auto">
                     <thead>
                       <tr>
-                        <th class="px-4 py-2">Title</th>
-                        <th class="px-4 py-2">Author</th>
-                        <th class="px-4 py-2">Views</th>
+                        <th class="px-4 py-2 text-left black text-xl">Datum	</th>
+                        <th class="px-4 py-2 text-left text-xl">Niederlassung	</th>
+                        <th class="px-4 py-2 text-left text-xl">Lektion</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td class="border px-4 py-2">Intro to CSS</td>
-                        <td class="border px-4 py-2">Adam</td>
-                        <td class="border px-4 py-2">858</td>
-                      </tr>
-                      <tr class="bg-gray-100">
-                        <td class="border px-4 py-2">A Long and Winding Tour of the History of UI Frameworks and Tools and the Impact on Design</td>
-                        <td class="border px-4 py-2">Adam</td>
-                        <td class="border px-4 py-2">112</td>
+                        <td class="px-4 py-2">07/10/22</td>
+                        <td class="px-4 py-2">Lorum Impsun</td>
+                        <td class="px-4 py-2">1</td>
                       </tr>
                       <tr>
-                        <td class="border px-4 py-2">Intro to JavaScript</td>
-                        <td class="border px-4 py-2">Chris</td>
-                        <td class="border px-4 py-2">1,280</td>
+                        <td class="px-4 py-2">07/10/22</td>
+                        <td class="px-4 py-2">Lorum Impsun</td>
+                        <td class="px-4 py-2">2</td>
+                      </tr>
+                      <tr>
+                        <td class="px-4 py-2">07/10/22</td>
+                        <td class="px-4 py-2">Lorum Impsun</td>
+                        <td class="px-4 py-2">3</td>
                       </tr>
                     </tbody>
                   </table>
     
             </div>
-            <div class="col-span-1 md:w-3/4 lg:w-1/2">
-                <img src="media/lessons-illustration.png" alt="">
-            </div>
+       
         </div>
-        <div class="py-5 lg:px-20 md:px-10  lg:mx-20 md:mx-20 mx-5 grid grid-cols-1 md:grid-cols-2 p-10 md:flex">
-            <div class="col-span-1 md:w-3/4 lg:w-1/2">
-                <img src="media/contact-illustration.png" alt="">
+        <div class="gap-12 py-5 lg:px-20 md:px-10  lg:mx-20 md:mx-20 mx-5 grid grid-cols-1 md:grid-cols-2 p-10 md:flex justify-center">
+            <div class="col-span-1 md:w-1/2 ">
+                <img src="media/contact-illustration.png" class="p-12" alt="">
                 <h1 class="flex py-5 md:px-1   md:mx-2 text-xl ">Das Team</h1>
                 <h1 class="flex  md:px-1   md:mx-2  leading-tight text-6xl">Contact us</h1>
                 <p class="flex mt-5 md:px-1   md:mx-2 text-2m ">
                     Unser kompetentes Team steht Ihnen jederzeit mit Rat und Tat zur Seite. Bitte kontaktieren Sie uns bei Fragen oder Unklarheiten!
                 </p>   
             </div>
-            <div class="col-span-1 md:flex md:justify-center md:flex-col md:p-10">
+            <div class="col-span-1 md:w-1/2 md:flex md:justify-center md:flex-col md:p-10">
     
 
                 <form class="w-full max-w-lg">
                     <div class="flex flex-wrap -mx-3 mb-6">
                       <div class="w-full  px-3 mb-6 md:mb-0 ">
                     
-                        <input class="appearance-none block w-full  text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white card-color" id="grid-first-name" type="text" placeholder="Name">
-                        <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+                        <input class="appearance-none block w-full  placeholder-gray-600  rounded-lg py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white card-color shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out" id="grid-first-name" type="text" placeholder="Name">
+                        <!-- <p class="text-red-500 text-xs italic">Please fill out this field.</p> -->
                       </div>
                       <div class="w-full  px-3">
-                        <input class="appearance-none block w-full card-color text-gray-700  rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="text" placeholder="Email">
+                        <input class="appearance-none block w-full card-color   placeholder-gray-600 rounded-lg py-5 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out" id="email" type="text" placeholder="Email">
                       </div>
                     </div>
                     <div class="flex flex-wrap -mx-3 mb-6">
                       <div class="w-full px-3">
-                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"  placeholder="Message">
+                        <input class="appearance-none block w-full card-color rounded-lg placeholder-gray-600 pb-48 pt-4 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out"  placeholder="Message">
                       </div>
                     </div>
-                    <button class=" color-text bg-transparent  py-2 px-4 border  rounded">
-                        ÜBER UNS
+                    <button class=" color-text-section2 bg-transparent  py-2 px-4 border rounded">
+                        SUBMIT
                       </button>
                     </form>                                    
     
             </div>
         </div>
-       
+        <div class=" md:py-36 grid grid-cols-2 md:grid-cols-4  pb-10 m-5  py-5 lg:px-20 md:px-10  lg:mx-20 md:mx-20 mx-5">
+            <div class=" col-span-1 px-3 mb-10 " >
+                <div class=" flex flex-col items-center rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out card-color pt-6">
+                    <img class="w-12" src="media/calender-icon.png"  alt="" >
+
+                    <p class="p-2 pt-4 pb-4  text-left text-center">	
+                        Gelnhäuserstraße 28 <br> 63607 Wächtersbach</p>
+                </div>
+            </div>
+
+            <div class=" col-span-1 px-3 mb-10 " >
+                <div class=" flex flex-col items-center rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out card-color pt-6">
+                    <img class="w-12" src="media/phone-icon.png.png"  alt="" >
+
+                    <p class="p-2 pt-4 pb-4  text-left text-center">	
+                        Tel: 06053/6182340 <br> Fax: 06053/6182341</p>
+                </div>
+            </div>
+            <div class=" col-span-1 px-3 mb-10 " >
+                <div class=" flex flex-col items-center rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out card-color pt-6">
+                    <img class="w-12" src="media/clock-icon.png"  alt="" >
+
+                    <p class="p-2 pt-4 pb-4  text-left text-center">	
+                        Tuesday & Thursday: <br> 6:00 p.m. - 7:00 p.m</p>
+                </div>
+            </div>
+            <div class=" col-span-1 px-3 mb-10 " >
+                <div class=" flex flex-col items-center rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out card-color pt-6">
+                    <img class="w-12" src="media/info-icon.png"  alt="" >
+
+                    <p class="p-2 pt-4 pb-4  text-left text-center">	
+                        Tuesday & Thursday: <br> 6:00 p.m. - 7:00 p.m</p>
+                </div>
+            </div>
+          
+
+            
+  
+            
+    </div>
       </section>
+<!-- GALLERY SECTION -->
+      <section class="min-h-screen card-color-yellow color-text-section2  items-center ">
+        <div class="pt-24 py-5 lg:px-20 md:px-0  lg:mx-64 md:mx-36 mx-5  grid grid-cols-1 md:grid-cols-2 p-10 md:justify-items-center md:flex md:flex-row-reverse">
+            <div class="col-span-1  w-1/2">
+                <p class="flex mt-2 md:px-1 md:mx-2 text-2m hidden  md:block">
+                    Ein Jahr ADAC Mitgliedschaft kostenlos, inklusive Sicherheitstraining Theorie-Intensivkurse in nur 7 Tagen
+                </p> 
+            </div>
+            <div class="col-span-1   w-1/2">
+                <h1 class="flex py-2 md:px-1   md:mx-2 text-xl ">ÜBER UNS</h1>
+                <h1 class="flex  md:px-1   md:mx-2  leading-tight text-6xl">Galerie</h1>
+    
+               <br>     
+            </div>
+            <p class="flex mt-5 md:px-1   md:mx-2 text-2m md:hidden">
+                Dies ist unsere neue Webpräsenz und wir hoffen, dass Sie einen angenehmen Aufenthalt haben. Sollten Sie Probleme oder Fragen haben, zögern Sie nicht, uns zu kontaktieren.
+            </p>   
+
+         
+        </div>
+    
+        <div class=" pb-32 py-5 p-8 lg:px-20 md:px-10   ">
+            <div class="flex flex-row flex-wrap -mx-2">
+           
+                 <div class="w-full sm:w-1/2 h-64 mb-4  px-2  ">
+                    <a class="block w-full h-full bg-grey-dark bg-no-repeat r     rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out card-color bg-center bg-cover" href="#" title="Link" style="background-image: url(media/photos/overus.jpg);">
+                    </a>
+                  </div>
+                  <div class="w-full sm:w-1/2 h-64 mb-4  px-2">
+                    <a class="block w-full h-full bg-grey-dark bg-no-repeat      rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out card-color bg-center bg-cover" href="#" title="Link" style="background-image: url(media/photos/standorte.jpg);">
+                    </a>
+                  </div>
+              <div class="w-full sm:w-1/3 h-64 mb-4 sm:mb-0 px-2">
+                <a class="block w-full h-full bg-grey-dark bg-no-repeat bg-center      rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out card-color bg-cover" href="#" title="Link" style="background-image: url(media/photos/team.jpg)">
+                </a>
+              </div>
+              <div class="w-full sm:w-1/3 h-64 mb-4 sm:mb-0 px-2">
+                <a class="block w-full h-full bg-grey-dark bg-no-repeat bg-center      rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out card-color bg-cover" href="#" title="Link" style="background-image: url(media/photos/about.jpg)">
+                </a>
+              </div>
+              <div class="w-full sm:w-1/3 h-64 px-2">
+                <a class="block w-full h-full bg-grey-dark bg-no-repeat bg-center      rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out card-color bg-cover" href="#" title="Link" style="background-image: url(media/photos/standorte_small.jpg);">
+                </a>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!-- footer -->
+
+	<footer class="p-4 bg-white sm:p-6 ">
+		<div class="md:flex md:justify-between flex-col">
+            <div class="flex flex-col md:flex-row py-8">
+                <div class="md:w-1/3 mb-6 md:mb-0 flex items-center flex-col">
+                    <img src="media/logo-footer.png" class="w-2/3" alt="">
+                </div>
+                <div class="md:w-1/3 p-10 pt-0">
+                    <p>Unsere Fahrschule versucht ständig, dem Anspruch einer möglichst hochwertigen, sowie reibungslosen Ausbildung gerecht zu werden. </p>
+                </div>
+                <div class="md:w-1/3 grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-2 md:mx-0 mx-24">
+                    <div>
+                        <h3 class="mb-6 text-sm font-semibold  uppercase ">Navigation</h3>
+                        <ul>
+                            <li class="mb-2">
+                                <a href="https://flowbite.com" target="_blank"
+                                    class=" hover:underline ">News</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="https://tailwindcss.com/" target="_blank" rel="nofollow"
+                                    class=" hover:underline">Klassen</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="https://flowbite.com" target="_blank"
+                                    class=" hover:underline ">Preise</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="https://tailwindcss.com/" target="_blank" rel="nofollow"
+                                    class=" hover:underline">E-Learning</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="mb-6 text-sm font-semibold  uppercase ">Others</h3>
+                        <ul>
+                            <li class="mb-2">
+                                <a href="https://flowbite.com" target="_blank"
+                                    class=" hover:underline ">Kontakt</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="https://tailwindcss.com/" target="_blank" rel="nofollow"
+                                    class=" hover:underline">Datenschutz</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="https://flowbite.com" target="_blank"
+                                    class=" hover:underline ">Impressum</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+	
+            <hr>
+            <div>
+                <ul class="w-full pt-9  text-xs text-center">
+                    <li class="mb-4">
+                        <a href="https://tailwindcss.com/" target="_blank" rel="nofollow"
+                        class=" hover:underline">Copyright © Werners Fahrschule ALL Right Reserved</a>
+                    </li>
+            
+                </ul>
+            </div>
+		</div>
+		
+	</footer>
+
+
 </body>
 </html>
 
