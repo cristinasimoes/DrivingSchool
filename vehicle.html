@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind library -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <!-- icon nav menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css" integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY=" crossorigin="anonymous" />
+    <title>Fahrzeuge</title>
+    <style>
+        .yellow{
+            color: #FFED00;
+            border-color: #FFED00;
+        }
+        .background-dark-blue{
+            background-color: #346CA1;
+        }
+    </style>
+    
+</head>
+<body class="tracking-wider"style="font-family: 'Fjalla One', sans-serif; letter-spacing: 1.6px;">
+
+
+
+  <!-- Classes Section -->
+  
+  <section class=" yellow">
+    <div class="bg-cover bg-center min-h-screen " style="background-image: url(media/blue-background.jpg)">
+        <!-- NAVBAR -->
+        <nav class="relative w-full flex flex-wrap items-center justify-between  py-3 bg-transparent text-gray-200  navbar navbar-expand-lg navbar-light pt-6  md:p-6 ">
+            <div class="container-fluid w-full flex  items-center justify-between px-6">
+                <div class="container-fluid">
+                    <a class="flex items-center text-gray-900 hover:text-gray-900 focus:text-gray-900 lg:mt-0 mr-1 w-1/3 md:w-1/3" href="#">
+                      <img src="media/logo.png"  alt="" loading="lazy" />
+                    </a>
+                  </div>                
+                <!-- Right elements -->
+                <div class="flex items-center relative">
+                    <button
+                    class="text-white inline-flex p-3  rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler"
+                    data-target="#navigation"
+                  >
+                    <i class="material-icons yellow ">menu</i>
+                  </button>
+                    <div class="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent1">
+                        <!-- Left links -->
+                        <ul class="navbar-nav flex flex-row pl-0 list-style-none mr-auto lg:flex hidden">
+                            <li class="nav-item p-2">
+                                <a class="yellow nav-link" href="index.html">Startseite</a>
+                            </li>
+                            <li class="nav-item p-2">
+                                <a
+                                class="yellow nav-link p-0"
+                                href="index.html#sectionNews"
+                                >News</a>
+                            </li>
+                            <li class="nav-item p-2">
+                                <a
+                                class=" yellow nav-link p-0"
+                                href="index.html#sectionClasses"
+                                >Klassen</a
+                                >
+                            </li>
+                            <li class="nav-item p-2">
+                                <a class="yellow nav-link" href="index.html#sectionLessons">Unterricht</a>
+                            </li>
+                            <li class="nav-item p-2">
+                                <a
+                                class="yellow nav-link p-0"
+                                href="index.html#sectionPrices"
+                                >Preise</a
+                                >
+                            </li>
+                            <li class="nav-item p-2 w-28">
+                                <a
+                                class="  yellow nav-link p-0"
+                                href="https://app.fahrschulcard.de/"
+                                >E-Learning</a
+                                >
+                            </li>
+                            <li class="nav-item p-2">
+                                <a
+                                class="yellow nav-link p-0"
+                                href="index.html#sectionContacts"
+                                >Kontakt</a
+                                >
+                            </li>
+                            <li class="nav-item p-2">
+                                <a
+                                class=" yellow nav-link p-0"
+                                href="vehicle.html"
+                                >Fahrzeuge</a
+                                >
+                            </li>
+                            </ul>
+                        <!-- Left links -->
+                    </div>
+            
+                </div>
+                <!-- Right elements -->
+            </div>
+        </nav>
+        <div class=" my-12 px-4 align-middle md:px-48 lg:px-56 lg:px-40 md:px-20  lg:mx-40 md:mx-20 mx-5
+        ">
+            <p class="align-middle md:text-center text-left py-2	md:text-5xl text-4xl leading-snug ">Unsere Fahrzeuge </p>
+            <p class="md:px-12 md:px-2 align-middle md:text-center text-left py-2	text-2m w-64 md:w-full">Im Folgenden finden Sie eine Liste unserer Fahrzeuge.</p>
+       
+        
+        </div>
+   
+        <div class=" grid md:grid-cols-2 grid-cols-1   pb-10 m-5  py-5 lg:px-20 md:px-10  lg:mx-20 md:mx-20 mx-5">
+                <div class=" col-span-1 px-3 mb-10" >
+                    <div class=" h-65 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out background-dark-blue flex flex-col items-center pb-8 ">
+
+
+                        <h1 class=" text-center pt-4  text-3xl  leading-tight ">Hyundai IX35</h1>
+                        <p class="p-2 pt-4 pb-4  text-left text-center">Type: Motor vehicle<br>Details: For automatic training B and BE.
+                        </p>
+                        <img class="w-2/3 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out" src="media/photos/hyundai_ix35.jpg"  alt="" >
+                    </div>
+                </div>
+                <div class=" col-span-1 px-3 mb-10" >
+                    <div class="col-span-1 md:w-32  w-1/5 absolute top-32 right-12 md:right-40">
+                        <img src="media/illustration-vehicle.png" alt="">
+                    </div>
+                    <div class=" h-65 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out background-dark-blue flex flex-col items-center pb-8 ">
+
+
+                        <h1 class=" text-center pt-4  text-3xl  leading-tight ">Hyundai IX35</h1>
+                        <p class="p-2 pt-4 pb-4  text-left text-center">Type: Motor vehicle<br>Details: For automatic training B and BE.
+                        </p>
+                        <img class="w-2/3 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out" src="media/photos/photo-car.jpg"  alt="" >
+                    </div>
+                </div>
+                <div class=" col-span-1 px-3 mb-10" >
+                    <div class=" h-65 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out background-dark-blue flex flex-col items-center pb-8 ">
+
+
+                        <h1 class=" text-center pt-4  text-3xl  leading-tight ">Hyundai IX35</h1>
+                        <p class="p-2 pt-4 pb-4  text-left text-center">Type: Motor vehicle<br>Details: For automatic training B and BE.
+                        </p>
+                        <img class="w-2/3 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out" src="media/photos/Yamaha_MT07-Fertig.jpg"  alt="" >
+                    </div>
+                </div>
+                <div class=" col-span-1 px-3 mb-10" >
+                    <div class=" h-65 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out background-dark-blue flex flex-col items-center pb-8 ">
+
+
+                        <h1 class=" text-center pt-4  text-3xl  leading-tight ">Hyundai IX35</h1>
+                        <p class="p-2 pt-4 pb-4  text-left text-center">Type: Motor vehicle<br>Details: For automatic training B and BE.
+                        </p>
+                        <img class="w-2/3 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out" src="media/photos/Honda_NC700-Fertig.jpg"  alt="" >
+                    </div>
+                </div>
+                <div class=" col-span-1 px-3 mb-10" >
+                    <div class=" h-65 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out background-dark-blue flex flex-col items-center pb-8 ">
+
+
+                        <h1 class=" text-center pt-4  text-3xl  leading-tight ">Hyundai IX35</h1>
+                        <p class="p-2 pt-4 pb-4  text-left text-center">Type: Motor vehicle<br>Details: For automatic training B and BE.
+                        </p>
+                        <img class="w-2/3 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out" src="media/photos/Yamaha_MT125-Fertig.jpg"  alt="" >
+                    </div>
+                </div>
+                <div class=" col-span-1 px-3 mb-10" >
+                    <div class=" h-65 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out background-dark-blue flex flex-col items-center pb-8 ">
+
+
+                        <h1 class=" text-center pt-4  text-3xl  leading-tight ">Hyundai IX35</h1>
+                        <p class="p-2 pt-4 pb-4  text-left text-center">Type: Motor vehicle<br>Details: For automatic training B and BE.
+                        </p>
+                        <img class="w-2/3 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out" src="media/photos/yamaha_aerox.jpg"  alt="" >
+                    </div>
+                </div>
+                <div class=" col-span-1 px-3 mb-10" >
+                    <div class=" h-65 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out background-dark-blue flex flex-col items-center pb-8 ">
+
+
+                        <h1 class=" text-center pt-4  text-3xl  leading-tight ">Hyundai IX35</h1>
+                        <p class="p-2 pt-4 pb-4  text-left text-center">Type: Motor vehicle<br>Details: For automatic training B and BE.
+                        </p>
+                        <img class="w-2/3 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out" src="media/photos/Zhongyu.jpg"  alt="" >
+                    </div>
+                </div>
+                
+        </div>
+    </div>
+  </section>
+
+      <!-- footer -->
+
+	<footer class="p-4 bg-white sm:p-6 ">
+		<div class="md:flex md:justify-between flex-col">
+            <div class="flex flex-col md:flex-row py-8">
+                <div class="md:w-1/3 mb-6 md:mb-0 flex items-center flex-col">
+                    <img src="media/logo-footer.png" class="w-2/3" alt="">
+                </div>
+                <div class="md:w-1/3 p-10 pt-0">
+                    <p>Unsere Fahrschule versucht ständig, dem Anspruch einer möglichst hochwertigen, sowie reibungslosen Ausbildung gerecht zu werden. </p>
+                </div>
+                <div class="md:w-1/3 grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-2 md:mx-0 mx-24">
+                    <div>
+                        <h3 class="mb-6 text-sm font-semibold  uppercase ">Navigation</h3>
+                        <ul>
+                            <li class="mb-2">
+                                <a href="index.html#sectionNews" target="_blank"
+                                    class=" hover:underline ">News</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="index.html#sectionClasses"
+                                target="_blank" rel="nofollow"
+                                    class=" hover:underline">Klassen</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="index.html#sectionPrices" target="_blank"
+                                    class=" hover:underline ">Preise</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="https://app.fahrschulcard.de/" target="_blank" rel="nofollow"
+                                    class=" hover:underline">E-Learning</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="mb-6 text-sm font-semibold  uppercase ">Others</h3>
+                        <ul>
+                            <li class="mb-2">
+                                <a href="index.html#sectionContacts" target="_blank"
+                                    class=" hover:underline ">Kontakt</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="Datenschutz.html" target="_blank" rel="nofollow"
+                                    class=" hover:underline">Datenschutz</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="Impressum.html" target="_blank"
+                                    class=" hover:underline ">Impressum</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+	
+            <hr>
+            <div>
+                <ul class="w-full pt-9  text-xs text-center">
+                    <li class="mb-4">
+                        <a href="https://tailwindcss.com/" target="_blank" rel="nofollow"
+                        class=" hover:underline">Copyright © Werners Fahrschule ALL Right Reserved</a>
+                    </li>
+            
+                </ul>
+            </div>
+		</div>
+		
+	</footer>
+
+
+</body>
+</html>
+
+<!--     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+} -->
